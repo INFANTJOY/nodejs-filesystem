@@ -29,9 +29,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const app = express();
-const __filename = fileURLToPath(import.meta.url);
+const _filename = fileURLToPath(import.meta.url);
 const _dirname = path.dirname(_filename);
-const folderPath = path.join(__dirname, './files');
+const folderPath = path.join(_dirname, './files');
 
 app.get('/create', (req, res) => {
     createFileAndWriteToFile();
