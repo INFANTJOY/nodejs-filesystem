@@ -24,7 +24,7 @@
 // });
 
 import express from 'express';
-import { createFileAndWriteToFile, getFilesInFolder } from './files.js';
+import { createFileAndWriteToFile, getFilesInFolder } from './filesystem.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
